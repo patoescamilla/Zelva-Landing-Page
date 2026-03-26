@@ -1313,6 +1313,15 @@ nav {
 }
 
 @media (max-width: 900px) {
+  .hero-grid,
+  .hero-copy,
+  .hero-visual,
+  .hero-img,
+  .hero-mini,
+  .hero-badge {
+    min-width: 0;
+  }
+
   .hero-visual {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1320,17 +1329,19 @@ nav {
     align-items: start;
     padding-top: 0;
     padding-bottom: 0;
+    width: 100%;
+    overflow: hidden;
   }
 
   .hero-img {
     grid-column: 1 / -1;
     height: 360px;
+    width: 100%;
   }
 
   .hero-mini-top,
   .hero-mini-bottom {
     position: relative;
-    max-width: 164px;
     padding: 12px 13px;
     right: auto;
     left: auto;
