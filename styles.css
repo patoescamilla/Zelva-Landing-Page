@@ -470,6 +470,7 @@ nav {
 
 .proj-card.big {
   grid-row: span 2;
+  max-height: 500px;
 }
 
 .proj-ph {
@@ -493,14 +494,15 @@ nav {
   object-fit: contain;
   object-position: center;
   background: #efe4d3;
+  vertical-align: top;
 }
 
 .proj-card.big .proj-ph {
-  height: 540px;
+  height: 500px;
 }
 
 .proj-card:not(.big) .proj-ph {
-  height: 250px;
+  height: 220px;
 }
 
 .proj-ov {
