@@ -454,8 +454,11 @@ nav {
 /* ── PROYECTOS ── */
 .proj-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 190px);
+  grid-template-columns: 1.35fr 1fr;
+  grid-template-rows: 260px 260px;
+  grid-template-areas:
+    "brand octava"
+    "dicrea vca";
   gap: 14px;
 }
 
@@ -469,10 +472,26 @@ nav {
 }
 
 .proj-card.big {
-  grid-row: span 3;
+  grid-row: auto;
   aspect-ratio: auto;
   height: 100%;
-  max-height: 584px;
+  max-height: none;
+}
+
+.project-brand {
+  grid-area: brand;
+}
+
+.project-octava {
+  grid-area: octava;
+}
+
+.project-vca {
+  grid-area: vca;
+}
+
+.project-dicrea {
+  grid-area: dicrea;
 }
 
 .proj-ph {
@@ -503,7 +522,7 @@ nav {
 }
 
 .proj-card:not(.big) .proj-ph {
-  height: 190px;
+  height: 100%;
 }
 
 .proj-ov {
