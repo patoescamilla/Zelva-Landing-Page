@@ -455,7 +455,7 @@ nav {
 .proj-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 190px);
   gap: 14px;
 }
 
@@ -470,8 +470,9 @@ nav {
 
 .proj-card.big {
   grid-row: span 3;
-  aspect-ratio: 1134 / 1600;
-  max-height: none;
+  aspect-ratio: auto;
+  height: 100%;
+  max-height: 584px;
 }
 
 .proj-ph {
@@ -502,7 +503,7 @@ nav {
 }
 
 .proj-card:not(.big) .proj-ph {
-  height: 176px;
+  height: 190px;
 }
 
 .proj-ov {
