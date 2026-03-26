@@ -486,6 +486,15 @@ nav {
   text-transform: uppercase;
 }
 
+.proj-media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #efe4d3;
+}
+
 .proj-card.big .proj-ph {
   height: 540px;
 }
