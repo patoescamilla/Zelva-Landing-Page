@@ -1257,37 +1257,52 @@ nav {
 
 @media (max-width: 900px) {
   .hero-visual {
-    padding-top: 44px;
-    padding-bottom: 118px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .hero-img {
+    grid-column: 1 / -1;
     height: 360px;
   }
 
   .hero-mini-top,
   .hero-mini-bottom {
+    position: relative;
     max-width: 164px;
     padding: 12px 13px;
-    right: 8px;
+    right: auto;
     left: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: none;
   }
 
   .hero-mini-top {
-    top: -6px;
+    justify-self: start;
+    margin-top: -24px;
   }
 
   .hero-mini-bottom {
-    bottom: -28px;
+    justify-self: end;
+    margin-top: -6px;
   }
 
   .hero-badge {
-    left: 8px;
-    bottom: 8px;
+    position: relative;
+    left: auto;
+    bottom: auto;
     font-size: 11px;
     letter-spacing: .08em;
     padding: 10px 13px;
-    max-width: 138px;
+    max-width: 148px;
+    margin-top: -54px;
+    margin-left: 10px;
   }
 
   .about-img-wrap {
