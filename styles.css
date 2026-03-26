@@ -454,7 +454,7 @@ nav {
 /* ── PROYECTOS ── */
 .proj-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, .72fr);
+  grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.8fr);
   gap: 14px;
   align-items: start;
 }
@@ -494,7 +494,7 @@ nav {
 
 .project-octava,
 .project-vca {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 5;
 }
 
 .project-dicrea {
