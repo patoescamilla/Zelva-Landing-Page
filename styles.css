@@ -512,9 +512,24 @@ nav {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  background: #f1b7bf;
+}
+
+.proj-media-brand {
+  object-position: center 44%;
+}
+
+.proj-media-octava {
+  object-position: center center;
+}
+
+.proj-media-vca {
+  object-position: center 18%;
+}
+
+.proj-media-dicrea {
+  object-position: center center;
 }
 
 .proj-card.big .proj-ph {
