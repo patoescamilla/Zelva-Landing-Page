@@ -454,12 +454,13 @@ nav {
 /* ── PROYECTOS ── */
 .proj-grid {
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  grid-template-rows: 260px 260px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, .95fr);
+  grid-template-rows: 360px 250px;
   grid-template-areas:
     "brand octava"
     "dicrea vca";
   gap: 14px;
+  align-items: stretch;
 }
 
 .proj-card {
@@ -480,18 +481,24 @@ nav {
 
 .project-brand {
   grid-area: brand;
+  aspect-ratio: 1 / 1;
+  width: min(100%, 360px);
+  justify-self: start;
 }
 
 .project-octava {
   grid-area: octava;
+  aspect-ratio: 4 / 5;
 }
 
 .project-vca {
   grid-area: vca;
+  aspect-ratio: 4 / 5;
 }
 
 .project-dicrea {
   grid-area: dicrea;
+  aspect-ratio: 16 / 9;
 }
 
 .proj-ph {
@@ -517,15 +524,15 @@ nav {
 }
 
 .proj-media-brand {
-  object-position: center 44%;
-}
-
-.proj-media-octava {
   object-position: center center;
 }
 
+.proj-media-octava {
+  object-position: center top;
+}
+
 .proj-media-vca {
-  object-position: center 18%;
+  object-position: center 14%;
 }
 
 .proj-media-dicrea {
